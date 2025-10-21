@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    /> -->
+
+    <title>Weather app</title>
+
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#0b0b30] m-3">
+    <!-- Nav bar -->
+    <nav>
+      <div class="flex justify-between">
+        <img src="./assets/images/logo.svg" alt="logo" class="w-[9rem]" />
+        <div
+          class="flex items-center text-white bg-gray-800 rounded-md space-x-1 p-1 px-1"
+        >
+          <img
+            src="./assets/images/icon-units.svg"
+            alt="icon"
+            class="w-[0.8rem]"
+          />
+          <p class="font-medium text-[0.8rem]">Units</p>
+          <img
+            src="./assets/images/icon-dropdown.svg"
+            alt="icon-dropdown"
+            class="w-[0.65rem]"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <div class="text-white text-center text-6xl font-semibold pt-8">
+      <p>How's the sky is looking today?</p>
+    </div>
+    <!-- Search -->
+    <div>
+      <div
+        class="mt-6 text-white bg-[#25253f] flex items-center space-x-2 pl-3 p-2 rounded-md"
+      >
+        <img
+          src="./assets/images/icon-search.svg"
+          alt="search"
+          class="w-[1.1rem]"
+        />
+        <input
+          type="search"
+          placeholder="Search for a place..."
+          class="text-[1.1rem] w-full"
+        />
+      </div>
+      <div class="text-white bg-[#4657d9] text-center p-2 rounded-md mt-3">
+        <button class="text-[1.1rem]">Search</button>
+      </div>
+    </div>
+    <!-- Weather Info -->
+    <div class="mt-7 relative">
+      <img
+        src="./assets/images/bg-today-small.svg"
+        alt="today small"
+        class="w-full"
+      />
+      <div
+        class="text-white text-center flex flex-col items-center space-y-3 absolute top-13 container"
+      >
+        <p class="font-medium text-4xl">Berlin, Germany</p>
+        <p class="">Tuesday, Aug 5, 2025</p>
+        <div class="flex items-center space-x-5">
+          <img
+            src="./assets/images/icon-sunny.webp"
+            alt="sunny"
+            class="w-[5rem]"
+          />
+          <p class="text-white text-7xl">68&deg</p>
+        </div>
+      </div>
+    </div>
+    <!-- Weather updates -->
+    <div class="grid grid-cols-2 gap-2.5 mt-5">
+      <div
+        class="bg-[#25253f] text-white font-medium text-[0.9rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-2"
+      >
+        <p>Feels Like</p>
+        <p>64&deg</p>
+      </div>
+      <div
+        class="bg-[#25253f] text-white font-medium text-[0.9rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+      >
+        <p>Humidity</p>
+        <p>46&percnt;</p>
+      </div>
+      <div
+        class="bg-[#25253f] text-white font-medium text-[0.9rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+      >
+        <p>Wind</p>
+        <p>9 mph</p>
+      </div>
+      <div
+        class="bg-[#25253f] text-white font-medium text-[0.9rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+      >
+        <p>Precipitation</p>
+        <p>0 in</p>
+      </div>
+    </div>
+    <!-- Forecasts -->
+    <div class="my-6 font-medium">
+      <p class="text-white text-2xl pb-6">Daily forecast</p>
+      <div class="grid grid-cols-3 gap-2.5">
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center py-3"
+        >
+          <p class="text-white">Tue</p>
+          <img src="assets/images/icon-rain.webp" alt="rain" class="w-[3rem]" />
+          <div class="text-white flex space-x-6 items-center">
+            <p>68&deg;</p>
+            <p>57&deg;</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center"
+        >
+          <p class="text-white">Wed</p>
+          <img
+            src="assets/images/icon-drizzle.webp"
+            alt="icon-drizzle"
+            class="w-[3rem]"
+          />
+          <div class="text-white flex space-x-6 items-center">
+            <p>70&deg;</p>
+            <p>59&deg;</p>
+          </div>
+        </div>
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center"
+        >
+          <p class="text-white">Thu</p>
+          <img
+            src="assets/images/icon-sunny.webp"
+            alt="icon-sunny"
+            class="w-[3rem]"
+          />
+          <div class="text-white flex space-x-6 items-center">
+            <p>75&deg;</p>
+            <p>57&deg;</p>
+          </div>
+        </div>
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center"
+        >
+          <p class="text-white">Fri</p>
+          <img
+            src="assets/images/icon-partly-cloudy.webp"
+            alt="icon-partly-cloudy"
+            class="w-[3rem]"
+          />
+          <div class="text-white flex space-x-6 items-center">
+            <p>77&deg;</p>
+            <p>55&deg;</p>
+          </div>
+        </div>
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center"
+        >
+          <p class="text-white">Sat</p>
+          <img
+            src="assets/images/icon-storm.webp"
+            alt="icon-storm"
+            class="w-[3rem]"
+          />
+          <div class="text-white flex space-x-6 items-center">
+            <p>70&deg;</p>
+            <p>59&deg;</p>
+          </div>
+        </div>
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center py-3"
+        >
+          <p class="text-white">Sun</p>
+          <img
+            src="assets/images/icon-snow.webp"
+            alt="icon-snow"
+            class="w-[3rem]"
+          />
+          <div class="text-white flex space-x-6 items-center">
+            <p>77&deg;</p>
+            <p>61&deg;</p>
+          </div>
+        </div>
+        <div
+          class="bg-[#25253f] rounded-md flex flex-col justify-center items-center py-3"
+        >
+          <p class="text-white">Mon</p>
+          <img src="assets/images/icon-fog.webp" alt="fog" class="w-[3rem]" />
+          <div class="text-white flex space-x-6 items-center">
+            <p>75&deg;</p>
+            <p>59&deg;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
