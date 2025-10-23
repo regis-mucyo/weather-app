@@ -16,13 +16,17 @@
 
     <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#0b0b30] m-3">
+  <body class="bg-[#0b0b30] m-3 lg:mx-16 lg:mt-10">
     <!-- Nav bar -->
     <nav>
       <div class="flex justify-between">
-        <img src="./assets/images/logo.svg" alt="logo" class="w-[9rem]" />
+        <img
+          src="./assets/images/logo.svg"
+          alt="logo"
+          class="w-[9rem] lg:w-[12rem]"
+        />
         <div
-          class="flex items-center text-white bg-[#25253f] rounded-md space-x-1 p-1 px-1"
+          class="flex items-center text-white bg-[#25253f] rounded-md space-x-1 p-1 px-5"
         >
           <img
             src="./assets/images/icon-units.svg"
@@ -39,13 +43,17 @@
       </div>
     </nav>
     <!-- Hero -->
-    <div class="text-white text-center text-6xl font-semibold pt-8">
+    <div
+      class="text-white text-center text-6xl lg:text-5xl font-semibold pt-8 lg:pt-12"
+    >
       <p>How's the sky is looking today?</p>
     </div>
     <!-- Search -->
-    <div>
+    <div
+      class="lg:flex lg:flex-row lg:justify-center lg:mt-14 lg:gap-2.5 lg:mx-[16rem]"
+    >
       <div
-        class="mt-6 text-white bg-[#25253f] flex items-center space-x-2 pl-3 p-2 rounded-md"
+        class="mt-6 lg:mt-0 text-white bg-[#25253f] flex items-center space-x-2 pl-3 p-2 rounded-md lg:w-full"
       >
         <img
           src="./assets/images/icon-search.svg"
@@ -55,10 +63,12 @@
         <input
           type="search"
           placeholder="Search for a place..."
-          class="text-[1.1rem] w-full"
+          class="text-[1.1rem] w-full lg:w-full outline-0"
         />
       </div>
-      <div class="text-white bg-[#4657d9] text-center p-2 rounded-md mt-3">
+      <div
+        class="text-white bg-[#4657d9] text-center p-2 rounded-md mt-3 lg:mt-0 lg:px-4"
+      >
         <button class="text-[1.1rem]">Search</button>
       </div>
     </div>
@@ -87,25 +97,25 @@
     <!-- Weather updates -->
     <div class="grid grid-cols-2 gap-2.5 mt-5">
       <div
-        class="bg-[#25253f] text-white font-medium text-[1.3rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+        class="bg-[#25253f] text-white font-medium text-[9rem] lg:text-2xl flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
       >
         <p>Feels Like</p>
         <p>64&percnt;</p>
       </div>
       <div
-        class="bg-[#25253f] text-white font-medium text-[1.3rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+        class="bg-[#25253f] text-white font-medium text-[9rem] lg:text-2xl flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
       >
         <p>Humidity</p>
         <p>46&percnt;</p>
       </div>
       <div
-        class="bg-[#25253f] text-white font-medium text-[1.3rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+        class="bg-[#25253f] text-white font-medium text-[9rem] lg:text-2xl flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
       >
         <p>Wind</p>
         <p>9 mph</p>
       </div>
       <div
-        class="bg-[#25253f] text-white font-medium text-[1.3rem] flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
+        class="bg-[#25253f] text-white font-medium text-[9rem] lg:text-2xl flex flex-col space-y-5 rounded-md pr-12 px-3.5 py-4"
       >
         <p>Precipitation</p>
         <p>0 in</p>
